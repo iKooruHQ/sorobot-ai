@@ -11,20 +11,20 @@ Need Help? Connect with me on the Stellar Development Discord Server. @NickThor0
 ## 🛠️ Development
 
 # Step 1: Get the Code
-
-```
 bash
+```
 
 git clone [github https url]
+
 ```
 
 # Step 2: Install Dependencies
 
-
-```
 bash
+```
 
 pnpm install
+
 
 ```
 
@@ -34,8 +34,8 @@ Duplicate the .env.local.example and rename it to .env
 
 Your .env should look like:
 
-```
 env
+```
 
 OPENAI_API_KEY=
 NEXT_PUBLIC_SUPABASE_URL=
@@ -59,7 +59,6 @@ Within utils/soroban_web_loader.ts, modify the values of title, date, and conten
 Remember, while you can include custom metadata, the default loader expects at least:
 
 typescript
-
 ```
 
 {
