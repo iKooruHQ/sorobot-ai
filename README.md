@@ -73,7 +73,7 @@ This will process URLs from the config directory, extract specified content, and
 
 ## 🚀 Launch the App
 
-Post confirming the successful addition of embeddings and content to your Supabase table, kick start the app with npm run dev. You're all set to pose questions and get them answered!
+Post confirming the successful addition of embeddings and content to your Supabase table, kick start the app with pnpm run dev. You're all set to pose questions and get them answered!
 
 ## 📜 Credits
 
