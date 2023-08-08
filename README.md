@@ -78,9 +78,9 @@ Paste and execute the schema.sql in your Supabase SQL editor. Ensure the existen
 
 Initiate the scraping and embedding script located in scripts/scrape-embed.ts using:
 
-
-```
 bash
+```
+
 
 npm run scrape-embed
 
