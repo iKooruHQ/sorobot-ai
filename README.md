@@ -94,7 +94,7 @@ Post confirming the successful addition of embeddings and content to your Supaba
 
 ## 📜 Credits
 
-Frontend Inspiration: langchain-chat-nextjs
-https://github.com/mayooear/notion-chat-langchain
+Frontend Inspiration: [langchain-chat-nextjs]("https://github.com/mayooear/notion-chat-langchain")
+
 
 Documentation: Extensively utilizes documentation from Soroban's React Guide and Soroban's Stellar Docs
