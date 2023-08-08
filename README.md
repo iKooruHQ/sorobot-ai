@@ -4,9 +4,9 @@ Leverage the power of Sorobot AI combined with LangChain, Supabase, and Next.js.
 
 ## Tutorial Video: Watch Now
 
-Need Help? Connect on the with me on the Stellar Development Discord Server.
+Need Help? Connect with me on the Stellar Development Discord Server. @NickThor01
 
-🖼️ Dive into the visual guide folder to visually comprehend this repository and the tutorial.
+🖼️ Dive into the instructions and get Sorobot AI up in 10 minutes or less!
 
 ## 🛠️ Development
 
@@ -14,18 +14,16 @@ Need Help? Connect on the with me on the Stellar Development Discord Server.
 
 bash
 
-Copy code
-
+```
 git clone [github https url]
+```
 
 # Step 2: Install Dependencies
 
 bash
 
-Copy code
 
 ```
-
 pnpm install
 
 ```
@@ -35,8 +33,6 @@ pnpm install
 Duplicate the .env.local.example and rename it to .env
 
 Your .env should look like:
-
-env
 
 ```
 
