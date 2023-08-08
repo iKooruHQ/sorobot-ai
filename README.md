@@ -12,18 +12,18 @@ Need Help? Connect with me on the Stellar Development Discord Server. @NickThor0
 
 # Step 1: Get the Code
 
+```
 bash
 
-```
 git clone [github https url]
 ```
 
 # Step 2: Install Dependencies
 
-bash
-
 
 ```
+bash
+
 pnpm install
 
 ```
@@ -35,6 +35,7 @@ Duplicate the .env.local.example and rename it to .env
 Your .env should look like:
 
 ```
+env
 
 OPENAI_API_KEY=
 NEXT_PUBLIC_SUPABASE_URL=
@@ -59,8 +60,6 @@ Remember, while you can include custom metadata, the default loader expects at l
 
 typescript
 
-Copy code
-
 ```
 
 {
@@ -80,9 +79,10 @@ Paste and execute the schema.sql in your Supabase SQL editor. Ensure the existen
 
 Initiate the scraping and embedding script located in scripts/scrape-embed.ts using:
 
-bash
 
 ```
+bash
+
 npm run scrape-embed
 
 ```
