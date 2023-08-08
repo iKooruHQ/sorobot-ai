@@ -55,7 +55,7 @@ Set up your database at Supabase and get your keys via the user dashboard follow
 
 Paste and execute the schema.sql in your Supabase SQL editor. Ensure the existence of the documents table and the match_documents function.
 
-## 🌍 Update Web Scraping and Embedding
+## 🌍 Update Embedding
 
 Initiate the scraping and embedding script located in scripts/install-stellar.ts, scripts/install-soroban.ts, scripts/install-soroban-react.ts using:
 
