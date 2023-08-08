@@ -51,41 +51,21 @@ Head over to OpenAI's Documentation to fetch your API keys.
 
 Set up your database at Supabase and get your keys via the user dashboard following their guide.
 
-# Step 4: Configuration
-
-Inside the config directory, replace the URLs with your website's. Ensure you have more than one URL for the script to function.
-
-# Step 5: Soroban Web Loader Setup
-
-Within utils/soroban_web_loader.ts, modify the values of title, date, and content to the CSS selectors representing the desired text content from your webpage. Dive deep into Cheerio's utility here.
-
-Remember, while you can include custom metadata, the default loader expects at least:
-
-typescript
-```
-
-{
-  pageContent: string;
-  metadata: { source: string; };
-}
-
-```
-
-This data will be saved in your Supabase database later.
-
-# Step 6: Database Setup
+# Step 4: Database Setup
 
 Paste and execute the schema.sql in your Supabase SQL editor. Ensure the existence of the documents table and the match_documents function.
 
 ## 🌍 Update Web Scraping and Embedding
 
-Initiate the scraping and embedding script located in scripts/scrape-embed.ts using:
+Initiate the scraping and embedding script located in scripts/install-stellar.ts, scripts/install-soroban.ts, scripts/install-soroban-react.ts using:
 
 bash
 ```
 
+pnpm run install-stellar
+pnpm run install-soroban
+pnpm run install-soroban-react
 
-npm run scrape-embed
 
 ```
 
@@ -100,4 +80,4 @@ Post confirming the successful addition of embeddings and content to your Supaba
 Inspiration: *[langchain notion bot](https://github.com/mayooear/notion-chat-langchain)*
 
 
-Documentation: Extensively utilizes documentation from Soroban's React Guide and Soroban's Stellar Docs
+Documentation: Extensively utilizes documentation from Soroban's React Guide, Soroban, and Stellar Docs
