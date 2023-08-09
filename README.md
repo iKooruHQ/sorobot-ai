@@ -1,5 +1,5 @@
 
-### Sorobot AI makes it easier to build DApps, DAOs, and smart contracts on Stellar/Soroban.
+### Sorobot AI makes it easier to build dApps, DAOs, and smart contracts on Stellar/Soroban.
 
 ![sorobot-ai-graphic](https://github.com/iKooruHQ/sorobot-ai/assets/124317926/1ae14817-1752-4cbc-8932-53f2f273e244)
 
