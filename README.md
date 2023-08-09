@@ -1,10 +1,10 @@
 ### Soroban Smart Contract Docs, LangChain & Supabase: Create a Coding AI to help you development with Soroban
 
-Leverage the power of Sorobot AI combined with LangChain, Supabase, and Next.js. LangChain is a cutting-edge framework designed for building scalable AI/LLM apps, and Supabase provides an open-source Postgres database with capabilities to store embeddings through a pg vector extension. You can customize Sorobot AI to your stellar blockchain project.
+Leverage the power of Soroban AI combined with LangChain, Supabase, TypeScript, OpenAI, and Next.js. LangChain is a cutting-edge framework designed for building scalable AI/LLM apps, and Supabase provides an open-source Postgres database with capabilities to store embeddings through a pg vector extension.
 
 ## Tutorial Video: Watch Now
 
-Need Help? Connect on the with me on the Stellar Development Discord Server.
+Need Help? Connect on the [Stellar Developers Discord](NickThoroughman on Discord)
 
 🖼️ Dive into the visual guide folder to visually comprehend this repository and the tutorial.
 

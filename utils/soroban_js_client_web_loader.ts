@@ -25,16 +25,16 @@ export class CustomWebLoader
 
   async load(): Promise<Document[]> {
     const $ = await this.scrape();
-    
+
     // Extracting title from the targeted h1 element
     const title = $('h1[data-testid="page.title"]').text();
-    
+
     const date = $('meta[property="article:published_time"]').attr('content');
-    
+
     // Extract content from the targeted div
-    const content = $('div[data-rnwrdesktop-1uwte3a="true"].css-175oi2r')
+    const content = $('section')
       .clone()
-      .find('div.elementor, style') 
+      .find('div, style')
       .remove()
       .end()
       .text();
@@ -45,7 +45,7 @@ export class CustomWebLoader
     const metadata = { source: this.webPath, title, date, contentLength };
 
     return [new Document({ pageContent: cleanedContent, metadata })];
-}
+  }
 
   static async imports(): Promise<{
     load: typeof LoadT;

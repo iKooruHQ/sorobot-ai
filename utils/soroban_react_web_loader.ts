@@ -34,7 +34,7 @@ export class CustomWebLoader
     // Extract content from the targeted div
     const content = $('div[data-rnwrdesktop-1uwte3a="true"].css-175oi2r')
       .clone()
-      .find('div.elementor, style')
+      .find('div, style')
       .remove()
       .end()
       .text();

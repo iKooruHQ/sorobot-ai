@@ -12,6 +12,7 @@
     "type-check": "tsc --noEmit",
     "lint": "eslint --ignore-path .gitignore \"**/*.+(ts|js|tsx)\"",
     "format": "prettier --ignore-path .gitignore \"**/*.+(ts|js|tsx)\" --write",
+    "install-js-soroban-client": "tsx -r dotenv/config scripts/install-stellar.ts",
     "install-soroban-react": "tsx -r dotenv/config scripts/install-soroban-react.ts",
     "install-soroban": "tsx -r dotenv/config scripts/install-soroban.ts",
     "install-stellar": "tsx -r dotenv/config scripts/install-stellar.ts"

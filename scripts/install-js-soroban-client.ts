@@ -8,7 +8,7 @@ import { supabaseClient } from '@/utils/supabase-client';
 
 //custom update to the original script
 import { CustomWebLoader } from '@/utils/soroban_js_client_web_loader';
-import { urls } from '@/config/sorobanreacturls';
+import { urls } from '@/config/sorobanjsclienturls';
 
 async function extractDataFromUrl(url: string): Promise<Document[]> {
   try {
@@ -30,7 +30,7 @@ async function extractDataFromUrls(urls: string[]): Promise<Document[]> {
   }
   console.log('data extracted from urls');
   const json = JSON.stringify(documents);
-  await fs.writeFile('sorobanreactdocs.json', json);
+  await fs.writeFile('sorobanjsclientdocs.json', json);
   console.log('json file containing data saved on disk');
   return documents;
 }

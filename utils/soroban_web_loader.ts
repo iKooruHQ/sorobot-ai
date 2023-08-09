@@ -30,7 +30,7 @@ export class CustomWebLoader
 
     const content = $('.theme-doc-markdown')
       .clone()
-      .find('div.elementor, style')
+      .find('div, style')
       .remove()
       .end()
       .text();

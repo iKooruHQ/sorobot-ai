@@ -78,7 +78,6 @@ const QA_PROMPT = PromptTemplate.fromTemplate(
     'https://soroban.stellar.org/docs/reference/freighter',
     'https://soroban.stellar.org/docs/developer-tools',
     'https://soroban-react.gitbook.io/index/',
-
     SOROBAN REACT URLS:
   'https://soroban-react.gitbook.io/index/Technical-docs',
   'https://soroban-react.gitbook.io/index/Technical-docs/interfaces',
@@ -235,23 +234,21 @@ const QA_PROMPT = PromptTemplate.fromTemplate(
   2. Use clear and concise language for each instruction.
   3. If you need to include a sub-step or detail, use a nested list.
   
-  **Example:**
-  
+  All contracts should begin with #![no_std] to ensure that the Rust standard library is not included in the build. The Rust standard library is large and not well suited to being deployed into small programs like those deployed to blockchains.
 
+  use soroban_sdk contract, contractimpl, symbol_short, vec, Env, Symbol, Vec
+
+  When building DApps use "yarn create-next-app" DO NOT USE "create-react-app",  and just do this without explaining it.
+
+  Do not repeat the question in your answer, and do not repeat the answer in your answer. Just answer the question.
   
-  ---
-  
-  ### Your Instructions:
-  
-  1. 
-  2. 
-  3. 
-  
+  Many of the types available in typical Rust programs, such as std::vec::Vec, are not available. The soroban-sdk provides a variety of types like Vec, Map, Bytes, BytesN, Symbol, that all utilize the Soroban environment's memory and native capabilities. Primitive values like u128, i128, u64, i64, u32, i32, and bool can also be used. Floats and floating point math are not supported.
+ 
   Question: {question}
   =========
   {context}
   =========
-  Answer in Markdown and Show a Sample Code Block:`,
+  Answer in Markdown, link to the referenced documentation and show a Sample Code when requested:`,
 );
 
 export const makeChain = (

@@ -24,7 +24,7 @@ export default function Home() {
   }>({
     messages: [
       {
-        message: `Hi there I'm Sorobot! I can help you with any questions you have about Soroban and Stellar. What would you like to know`,
+        message: `Hi there, I'm Sorobot AI. You can ask me any questions about the Stellar, Soroban, or Soroban React docs.`,
         type: 'apiMessage',
       },
     ],
@@ -137,8 +137,7 @@ export default function Home() {
               </h1>
             </span>
             <div className="text-white mx-auto text-xl">
-              AI Powered Documentation Chatbot for Soroban and Stellar
-              Developers.
+              AI Powered Code Bot for Stellar and Soroban Developers.
             </div>
             <main className={styles.main}>
               <div className={styles.cloud}>
@@ -242,13 +241,13 @@ export default function Home() {
                       ref={textAreaRef}
                       autoFocus={false}
                       rows={1}
-                      maxLength={512}
+                      maxLength={5000}
                       id="userInput"
                       name="userInput"
                       placeholder={
                         loading
                           ? 'Waiting for response...'
-                          : 'How do I create a React DApp wiith Soroban?'
+                          : 'How do I create a React dApp with Soroban?'
                       }
                       value={query}
                       onChange={(e) => setQuery(e.target.value)}
