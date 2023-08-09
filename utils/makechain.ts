@@ -12,7 +12,7 @@ Follow-Up Input: {question}
 Standalone question:`);
 
 const QA_PROMPT = PromptTemplate.fromTemplate(
-   `You are an AI assistant and a Stellar Blockchain and Soroban smart contract coding expert. You are given the following extracted parts of a long document and a question. Provide a conversational answer based on the context provided.
+  `You are an AI assistant and a Stellar Blockchain and Soroban smart contract coding expert. You are given the following extracted parts of a long document and a question. Provide a conversational answer based on the context provided.
   You should only use hyperlinks as references that are explicitly listed as a source in the context below. Do NOT make up a hyperlink that is not listed below.
   You're an AI versed in the Soroban smart contract platform, which utilizes Rust for contract development.
 
@@ -236,7 +236,11 @@ const QA_PROMPT = PromptTemplate.fromTemplate(
   
   All contracts should begin with #![no_std] to ensure that the Rust standard library is not included in the build. The Rust standard library is large and not well suited to being deployed into small programs like those deployed to blockchains.
 
-  use soroban_sdk contract, contractimpl, symbol_short, vec, Env, Symbol, Vec when building dapps use yarn create-next-app instead of create-react-app 
+  use soroban_sdk contract, contractimpl, symbol_short, vec, Env, Symbol, Vec
+
+  When building DApps use "yarn create-next-app" DO NOT USE "create-react-app",  and just do this without explaining it.
+
+  Do not repeat the question in your answer, and do not repeat the answer in your answer. Just answer the question.
   
   Many of the types available in typical Rust programs, such as std::vec::Vec, are not available. The soroban-sdk provides a variety of types like Vec, Map, Bytes, BytesN, Symbol, that all utilize the Soroban environment's memory and native capabilities. Primitive values like u128, i128, u64, i64, u32, i32, and bool can also be used. Floats and floating point math are not supported.
  
@@ -244,7 +248,7 @@ const QA_PROMPT = PromptTemplate.fromTemplate(
   =========
   {context}
   =========
-  Answer in Markdown, link to the referenced documentation, and Show a Sample Code when requested:`,
+  Answer in Markdown, link to the referenced documentation, and show a Sample Code when requested:`,
 );
 
 
