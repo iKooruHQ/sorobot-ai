@@ -46,7 +46,7 @@ const QA_PROMPT = PromptTemplate.fromTemplate(
     'https://soroban.stellar.org/docs/fundamentals-and-concepts/built-in-types',
     'https://soroban.stellar.org/docs/fundamentals-and-concepts/contract-lifecycle',
     'https://soroban.stellar.org/docs/fundamentals-and-concepts/custom-types',
-    'hhttps://soroban.stellar.org/docs/fundamentals-and-concepts/rust-dialect',
+    'https://soroban.stellar.org/docs/fundamentals-and-concepts/rust-dialect',
     'https://soroban.stellar.org/docs/fundamentals-and-concepts/debugging',
     'https://soroban.stellar.org/docs/fundamentals-and-concepts/environment-concepts',
     'https://soroban.stellar.org/docs/fundamentals-and-concepts/errors',
@@ -78,33 +78,61 @@ const QA_PROMPT = PromptTemplate.fromTemplate(
     'https://soroban.stellar.org/docs/reference/freighter',
     'https://soroban.stellar.org/docs/developer-tools',
     'https://soroban-react.gitbook.io/index/',
+
+    Install the Soroban CLI
+The Soroban CLI can execute Soroban contracts in the same environment the contract will execute on network, however in a local sandbox.
+
+Install the Soroban CLI using cargo install.
+
+cargo install --locked --version 0.9.4 soroban-cli
+
+INFO
+Report issues and share feedback about the Soroban CLI here.
+
+Usage
+Run the soroban command and you should see output like below.
+
+soroban
+
+$ soroban
+Build, deploy, & interact with contracts; set identities to sign with; configure networks; generate keys; and more.
+
+Intro: https://soroban.stellar.org
+CLI Reference: https://github.com/stellar/soroban-tools/tree/main/docs/soroban-cli-full-docs.md
+
+Usage: soroban [OPTIONS] <COMMAND>
+
+Commands:
+  contract    Tools for smart contract developers
+  config      Read and update config
+  events      Watch the network for contract events
+  lab         Experiment with early features and expert tools
+  version     Print version information
+  completion  Print shell completion code for the specified shell
+
+Options:
+      --global                     Use global config
+  -f, --filter-logs <FILTER_LOGS>  Filter logs output. To turn on "soroban_cli::log::footprint=debug" or off "=off". Can also use env var "RUST_LOG"
+  -q, --quiet                      Do not write logs to stderr including "INFO"
+  -v, --verbose                    Log DEBUG events
+      --very-verbose               Log DEBUG and TRACE events
+      --list                       List installed plugins. E.g. "soroban-hello"
+  -h, --help                       Print help (see more with '--help')
+  -V, --version                    Print version
+
+TESTING_OPTIONS:
+      --config-dir <CONFIG_DIR>
     
   If you can't find the answer in the context below, just say "Hmm, I'm not sure." Don't try to make up an answer.
-  If the question is not related to Stellar, Soroban api or the context provided, politely inform them that you are tuned to only answer questions that are related to Soroban.
+  If the question is not related to Stellar, Soroban documentation or the context provided, politely inform them that you are tuned to only answer questions that are related to Soroban.
   Choose the most relevant link that matches the context provided. Give all information complete and thorough step by step instructions with breaks between each line. 
-  ## Step-by-Step Instructions
+  ## Step-by-Step comprehensive instructions from referencing the documentation with the code examples from the page.
 
-  Please follow the guidelines below to create your step-by-step list:
-  
-  1. Start each instruction with a numbered list #1 #2 #3 etc.
-  2. Use clear and concise language for each instruction.
-  3. If you need to include a sub-step or detail, use a nested list.
-  
-  All contracts should begin with #![no_std] to ensure that the Rust standard library is not included in the build. The Rust standard library is large and not well suited to being deployed into small programs like those deployed to blockchains.
-
-  use soroban_sdk contract, contractimpl, symbol_short, vec, Env, Symbol, Vec
-
-  When building DApps use "yarn create-next-app" DO NOT USE "create-react-app",  and just do this without explaining it.
-
-  Do not repeat the question in your answer, and do not repeat the answer in your answer. Just answer the question.
-  
-  Many of the types available in typical Rust programs, such as std::vec::Vec, are not available. The soroban-sdk provides a variety of types like Vec, Map, Bytes, BytesN, Symbol, that all utilize the Soroban environment's memory and native capabilities. Primitive values like u128, i128, u64, i64, u32, i32, and bool can also be used. Floats and floating point math are not supported.
- 
   Question: {question}
   =========
   {context}
   =========
-  Answer in Markdown, link to the referenced documentation and show a Sample Code when requested:`,
+  Answer in Markdown, show the complete code example from the documentation, and link to the referenced documentation:`,
 );
 
 export const makeChain = (

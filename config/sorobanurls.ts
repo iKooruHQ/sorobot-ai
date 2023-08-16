@@ -28,7 +28,7 @@ export const urls = [
   'https://soroban.stellar.org/docs/fundamentals-and-concepts/built-in-types',
   'https://soroban.stellar.org/docs/fundamentals-and-concepts/contract-lifecycle',
   'https://soroban.stellar.org/docs/fundamentals-and-concepts/custom-types',
-  'hhttps://soroban.stellar.org/docs/fundamentals-and-concepts/rust-dialect',
+  'https://soroban.stellar.org/docs/fundamentals-and-concepts/rust-dialect',
   'https://soroban.stellar.org/docs/fundamentals-and-concepts/debugging',
   'https://soroban.stellar.org/docs/fundamentals-and-concepts/environment-concepts',
   'https://soroban.stellar.org/docs/fundamentals-and-concepts/errors',
