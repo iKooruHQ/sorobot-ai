@@ -8,9 +8,7 @@ Leverage the power of Soroban AI combined with LangChain, Supabase, TypeScript, 
 
 Need Help? Connect with me on the Stellar Development Discord Server. @NickThor01
 
-# 🖼️ Dive into the visual guide folder to visually comprehend this repository and the tutorial.
-
-🖼️ Dive into the instructions and get Sorobot AI up in 10 minutes or less!
+# 🖼️ Dive into the instructions and get Sorobot AI up in 10 minutes or less!
 
 ## 🛠️ Development
 
