@@ -47,8 +47,8 @@ async function embedDocuments(
 
 async function splitDocsIntoChunks(docs: Document[]): Promise<Document[]> {
   const textSplitter = new RecursiveCharacterTextSplitter({
-    chunkSize: 2000,
-    chunkOverlap: 200,
+    chunkSize: 200,
+    chunkOverlap: 50,
   });
   return await textSplitter.splitDocuments(docs);
 }

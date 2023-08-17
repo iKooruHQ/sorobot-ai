@@ -2,7 +2,6 @@ import type { CheerioAPI, load as LoadT } from 'cheerio';
 import { Document } from 'langchain/document';
 import { BaseDocumentLoader } from 'langchain/document_loaders';
 import type { DocumentLoader } from 'langchain/document_loaders';
-import { CheerioWebBaseLoader } from 'langchain/document_loaders';
 
 export class CustomWebLoader
   extends BaseDocumentLoader

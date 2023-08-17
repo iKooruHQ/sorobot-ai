@@ -80,6 +80,7 @@ const QA_PROMPT = PromptTemplate.fromTemplate(
     'https://soroban-react.gitbook.io/index/',
 
     Install the Soroban CLI
+    
 The Soroban CLI can execute Soroban contracts in the same environment the contract will execute on network, however in a local sandbox.
 
 Install the Soroban CLI using cargo install.
@@ -164,20 +165,3 @@ export const makeChain = (
     questionGeneratorChain: questionGenerator,
   });
 };
-
-// Here's a quick rundown of setting up a Soroban contract:
-
-// 1. **Initialization**: A new Rust library is started with "cargo new --lib hello-soroban".
-// 2. **Cargo.toml Configuration**:
-//     - Specify the package name, version, and edition.
-//     - Indicate the "crate-type" as "["cdylib"]".
-//     - Integrate the "soroban-sdk" with a specific version and features.
-//     - Specify release profile configurations, with certain optimizations to keep contract sizes small.
-//     - Optionally, configure a "release-with-logs" profile for debugging purposes with logs.
-// 3. **Writing a Contract**:
-//     - Rust contracts should not include the standard Rust library. Hence, start with "#![no_std]".
-//     - Essential imports are made from the "soroban-sdk" crate.
-//     - Soroban contracts don't support the usual Rust types like "std::vec::Vec" due to memory constraints. However, types like "Vec","Map", "Bytes", "Symbol" are provided by "soroban-sdk" that work within the Soroban environment.
-//     - A struct annotated with "#[contract]" represents the contract.
-//     - Contract functions are defined in an "impl" block annotated with "#[contractimpl]". These functions can accept inputs, but these should not be references.
-//     - For external invocations, functions should have the "pub" modifier.

@@ -1,4 +1,3 @@
-
 ### Sorobot AI makes it easier to build dApps, DAOs, and smart contracts on Stellar/Soroban.
 
 ![sorobot-ai-graphic](https://github.com/iKooruHQ/sorobot-ai/assets/124317926/1ae14817-1752-4cbc-8932-53f2f273e244)
@@ -6,20 +5,19 @@
 Leverage the power of Soroban AI combined with LangChain, Supabase, TypeScript, OpenAI, and Next.js. LangChain is a cutting-edge framework designed for building scalable AI/LLM apps, and Supabase provides an open-source Postgres database with capabilities to store embeddings through a pg vector extension.
 
 ## Tutorial Video: Watch Now on Discord
+
 Need Help? Connect with me on the Stellar Development Discord Server. @NickThor01
 
-<<<<<<< HEAD
-Need Help? Connect on the [Stellar Developers Discord](NickThoroughman on Discord)
+# 🖼️ Dive into the visual guide folder to visually comprehend this repository and the tutorial.
 
-🖼️ Dive into the visual guide folder to visually comprehend this repository and the tutorial.
-=======
 🖼️ Dive into the instructions and get Sorobot AI up in 10 minutes or less!
->>>>>>> 300e8362b430bd83974f0867b46942cb09d3d17f
 
 ## 🛠️ Development
 
 # Step 1: Get the Code
+
 bash
+
 ```
 
 git clone [github https url]
@@ -29,6 +27,7 @@ git clone [github https url]
 # Step 2: Install Dependencies
 
 bash
+
 ```
 
 pnpm install
@@ -43,6 +42,7 @@ Duplicate the .env.local.example and rename it to .env
 Your .env should look like:
 
 env
+
 ```
 
 OPENAI_API_KEY=
@@ -65,6 +65,7 @@ Paste and execute the schema.sql in your Supabase SQL editor. Ensure the existen
 Initiate the scraping and embedding script located in scripts/install-stellar.ts, scripts/install-soroban.ts, scripts/install-soroban-react.ts using:
 
 bash
+
 ```
 
 pnpm run install-stellar
@@ -82,7 +83,6 @@ Post confirming the successful addition of embeddings and content to your Supaba
 
 ## 📜 Credits
 
-Inspiration: *[langchain notion bot](https://github.com/mayooear/notion-chat-langchain)*
-
+Inspiration: _[langchain notion bot](https://github.com/mayooear/notion-chat-langchain)_
 
 Documentation: Extensively utilizes documentation from Soroban's React Guide, Soroban, and Stellar Docs

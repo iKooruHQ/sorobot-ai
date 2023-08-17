@@ -50,6 +50,7 @@ async function splitDocsIntoChunks(docs: Document[]): Promise<Document[]> {
     chunkSize: 2000,
     chunkOverlap: 200,
   });
+
   return await textSplitter.splitDocuments(docs);
 }
 
