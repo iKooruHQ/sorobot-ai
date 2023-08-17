@@ -7,7 +7,7 @@ import { RecursiveCharacterTextSplitter } from 'langchain/text_splitter';
 import { supabaseClient } from '@/utils/supabase-client';
 
 //custom update to the original script
-import { CustomWebLoader } from '@/utils/soroban_js_client_web_loader';
+import { CustomWebLoader } from '@/utils/soroban_react_web_loader';
 import { urls } from '@/config/sorobanreacturls';
 
 async function extractDataFromUrl(url: string): Promise<Document[]> {
@@ -47,8 +47,8 @@ async function embedDocuments(
 
 async function splitDocsIntoChunks(docs: Document[]): Promise<Document[]> {
   const textSplitter = new RecursiveCharacterTextSplitter({
-    chunkSize: 2000,
-    chunkOverlap: 200,
+    chunkSize: 200,
+    chunkOverlap: 50,
   });
   return await textSplitter.splitDocuments(docs);
 }
